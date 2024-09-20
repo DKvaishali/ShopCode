@@ -161,12 +161,7 @@ const Layout = ({children}) => {
       
     </footer>
     
-    {/* {
-      open && 
-      <aside className='md:hidden bg-slate-900 shadow-lg  fixed top-0 left-0 z-10 w-[200px] h-[500px]'>
-          
-    </aside>
-} */}
+    
   {open && (
   <aside className='md:hidden bg-slate-900 shadow-lg fixed top-0 right-0 z-10 w-[200px] h-full'>
     <div className="p-4 text-white">
