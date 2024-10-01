@@ -147,10 +147,9 @@ const Home = () => {
 
           </Swiper>
         </header>
-        <Products/>
-        {/* <div className='p-16'>
+        <div className='md:p-16 p-8'>
           <h1 className='text-xl text-center font-bold'>Latest Products</h1>
-          <p className='text-center text-gray-500 mx-auto w-7/12 mt-2 mb-16'>"Discover top-quality products at unbeatable prices. Shop the latest trends and essentials for a seamless and enjoyable shopping experience!"</p>
+          <p className='text-center text-gray-500 mx-auto md:w-7/12 mt-2 mb-16'>"Discover top-quality products at unbeatable prices. Shop the latest trends and essentials for a seamless and enjoyable shopping experience!"</p>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
 
             {products.map((product, index) => (
@@ -177,7 +176,13 @@ const Home = () => {
                   <label className='text-green-600 font-semibold'>{product.discount}% off</label>
 
                 </div>
-                <button className="bg-customOrange text-white px-4 py-2 rounded-lg w-full mt-4  font-semiboldhover:text-white-500 hover:bg-darkBlue border">Add to cart</button>
+                <div>
+               
+                <button className="bg-customOrange text-white px-4 py-2 rounded-lg w-full mt-4  font-semibold hover:text-white-500 hover:bg-darkBlue border">
+                <i className="ri-shopping-cart-line mr-2"></i>
+                Add to cart</button>
+                </div>
+                
 
               </div>
               </div>
@@ -185,12 +190,7 @@ const Home = () => {
 
 
         </div>
-    </div> */}
-
-
-
-
-
+    </div>
 
       </Layout ></div >
   )

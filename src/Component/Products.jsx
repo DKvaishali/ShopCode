@@ -142,7 +142,13 @@ const Products = () => {
                   <label className='text-green-600 font-semibold'>{product.discount}% off</label>
 
                 </div>
-                <button className="bg-customOrange text-white px-4 py-2 rounded-lg w-full mt-4  font-semiboldhover:text-white-500 hover:bg-darkBlue border">Add to cart</button>
+                <div>
+               
+                <button className="bg-customOrange text-white px-4 py-2 rounded-lg w-full mt-4  font-semibold hover:text-white-500 hover:bg-darkBlue border">
+                <i className="ri-shopping-cart-line mr-2"></i>
+                Add to cart</button>
+                </div>
+                
 
               </div>
               </div>

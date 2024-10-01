@@ -1,41 +1,50 @@
 import React from 'react';
-import fashion from '../assets/images/fashion.png';
+import c1 from '../assets/images/c1.png';
+import c3 from '../assets/images/c3.png';
+import c6 from '../assets/images/c6.avif';
+import c7 from '../assets/images/c7.webp';
+import c8 from '../assets/images/c8.jpeg';
+import c9 from '../assets/images/c9.avif';
+import c10 from '../assets/images/c10.jpg';
+import Layout from './Layout';
+
 
 const categories = [
   {
     id: 1,
     name: "Men's Fashion",
-    imageSrc: "https://via.placeholder.com/300x200",
+    imageSrc: c8,
   },
   {
     id: 2,
     name: "Women's Fashion",
-    imageSrc: fashion,
+    imageSrc: c9,
   },
   {
     id: 3,
     name: "Electronics",
-    imageSrc: "https://via.placeholder.com/300x200",
+    imageSrc: c3,
   },
   {
     id: 4,
     name: "Home & Kitchen",
-    imageSrc: "https://via.placeholder.com/300x200",
+    imageSrc:c10,
   },
   {
     id: 5,
     name: "Beauty & Personal Care",
-    imageSrc: "https://via.placeholder.com/300x200",
+    imageSrc: c6,
   },
   {
     id: 6,
     name: "Sports & Fitness",
-    imageSrc: "https://via.placeholder.com/300x200",
+    imageSrc: c7,
   },
 ];
 
 const Category = () => {
   return (
+    <Layout>
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-gray-900 mb-8">Shop by Category</h1>
@@ -61,6 +70,7 @@ const Category = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 

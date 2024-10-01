@@ -34,7 +34,7 @@ const Layout = ({children}) => {
             <div>
             <button className='md:hidden'
             onClick={()=>setOpen(!open)}>
-            <i className="ri-menu-search-fill text-darkBlue"></i>
+            <i className="ri-menu-search-fill text-darkBlue font-bold text-3xl hover:text-customOrange"></i>
             </button>
                <ul className='md:flex  hidden gap-4 items-center'>
                 {
@@ -52,7 +52,7 @@ const Layout = ({children}) => {
                 className='p-3 block text-center text-[#003B56] font-semibold border-b-4 border-transparent hover:border-customOrange'>
                     Login</Link>
                     <Link
-                to='/login'
+                to='/Register'
                 className='px-5 py-2 block text-center text-md  text-white  rounded hover:bg-[#003B56] font-semibold border-b-4 border-transparent bg-customOrange'>
                     Register</Link>
                </ul>
@@ -161,9 +161,14 @@ const Layout = ({children}) => {
       
     </footer>
     
-    
+    {/* {
+      open && 
+      <aside className='md:hidden bg-slate-900 shadow-lg  fixed top-0 left-0 z-10 w-[200px] h-[500px]'>
+          
+    </aside>
+} */}
   {open && (
-  <aside className='md:hidden bg-slate-900 shadow-lg fixed top-0 right-0 z-10 w-[200px] h-full'>
+  <aside className='md:hidden bg-darkBlue shadow-lg fixed top-0 right-0 z-10 w-[200px] h-[330px]'>
     <div className="p-4 text-white">
       {/* Close Button */}
       <button onClick={() => setOpen(false)} className="text-right w-full">
@@ -177,7 +182,7 @@ const Layout = ({children}) => {
             <Link
               to={item.link}
               onClick={() => setOpen(false)}  // Close menu on click
-              className="block text-white font-semibold hover:text-customOrange">
+              className="block text-white font-semibold text-lg hover:text-customOrange hover:text-xl">
               {item.label}
             </Link>
           </li>
@@ -186,7 +191,7 @@ const Layout = ({children}) => {
           <Link
             to='/login'
             onClick={() => setOpen(false)}  // Close menu on click
-            className="block text-white font-semibold hover:text-customOrange">
+            className="block text-white font-semibold text-lg hover:text-customOrange hover:text-xl">
             Login
           </Link>
         </li>
@@ -194,7 +199,7 @@ const Layout = ({children}) => {
           <Link
             to='/register'
             onClick={() => setOpen(false)}  // Close menu on click
-            className="block text-white font-semibold hover:text-customOrange">
+            className="block text-white  text-lg font-semibold hover:text-customOrange hover:text-xl">
             Register
           </Link>
         </li>

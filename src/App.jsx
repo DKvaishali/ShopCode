@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 import PageNotFound from './Component/PageNotFound';
-// import Products from './Component/Admin/Products';
+import AdminProducts from './Component/Admin/Products';
 import Orders from './Component/Orders';
 import Dashboard from './Component/Dashboard';
 import Payment from './Component/Payment';
@@ -15,6 +15,9 @@ import Admin from './Component/Admin';
 import Home from './Component/Home';
 import Products from './Component/Products';
 import Category from './Component/Category';
+import Login from './Component/Login';
+import Register from './Component/Register';
+import ContactUs from './Component/ContactUs';
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,8 +25,11 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/category' element={<Category/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/contactus' element={<ContactUs/>}/>
         <Route path='/admin'>
-          {/* <Route path='Products' element={<Products />} /> */}
+          <Route path='products' element={<AdminProducts />} />
           <Route path='Orders' element={<Orders />} />
           <Route path='Dashboard' element={<Dashboard />} />
           <Route path='Payment' element={<Payment />} />
